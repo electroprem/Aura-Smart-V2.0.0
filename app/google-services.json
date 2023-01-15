@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "711996608374",
+    "project_id": "aura-smart",
+    "storage_bucket": "aura-smart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711996608374:android:20181ce48d11ed425cf457",
+        "android_client_info": {
+          "package_name": "com.electrocaps.aurasmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711996608374-85iv599nf2g6r0bqlls65meu2sgmmv1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy-r8EbSEsJWymznvflmiqrrrzT6forfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711996608374-85iv599nf2g6r0bqlls65meu2sgmmv1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

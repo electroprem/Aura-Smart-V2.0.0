@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#24272C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roto_font_med"
+        android:text="AURA SMART"
+        android:textAlignment="center"
+
+        android:textColor="@color/white"
+        android:textSize="57sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="425dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="11dp"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+            <ToggleButton
+                android:id="@+id/living_room"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/living_off"
+                android:textOff=""
+
+                android:textOn="" />
+
+            <Space
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ToggleButton
+                android:id="@+id/bed_room"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bed_ff"
+                android:textOff=""
+
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kitchen"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/kitch_off"
+                android:textOff=""
+
+                android:textOn="" />
+
+            <Space
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/colorpicker"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/discolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:srcCompat="@drawable/color_wheel" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/montserrat_med"
+        android:text="Modes"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorpicker" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorpicker"
+        app:srcCompat="@drawable/add_btn" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorpicker">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView7"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                app:srcCompat="@drawable/breath_off" />-->
+
+
+             <ToggleButton
+            android:id="@+id/breathing"
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/breath_off"
+            android:textOff=""
+            android:textOn="" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView7"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                app:srcCompat="@drawable/smooth_off" />-->
+            <ToggleButton
+                android:id="@+id/smooth"
+
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/smooth_off"
+                android:textOff=""
+                android:textOn="" />
+            <ToggleButton
+                android:id="@+id/rgb"
+
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/rgb_off"
+                android:textOff=""
+                android:textOn="" />
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView11"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:srcCompat="@drawable/rgb_off" />-->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24sp"
+
+        android:fontFamily="@font/montserrat_med"
+
+        android:text="Lights"
+
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+        app:srcCompat="@drawable/ellipsis_vertical" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_med"
+        android:text="3 devices"
+        android:textColor="@color/teal_200"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorpicker">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/overhead"
+
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle__overhead"
+                android:textOff=""
+                android:textOn="" />
+            <Space
+                android:layout_width="30sp"
+                android:layout_height="wrap_content" />
+
+            <ToggleButton
+                android:id="@+id/lamp"
+
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:background="@drawable/lamp_off"
+                android:textOff=""
+                android:textOn="" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView7"-->
+<!--                android:layout_width="105dp"-->
+<!--                android:layout_height="105dp"-->
+<!--                app:srcCompat="@drawable/toggle__overhead" />-->
+
+
+
+            <Space
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <ToggleButton
+                android:id="@+id/pendant"
+
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle__pendant"
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="394dp"
+        android:layout_height="123dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/menu_home" />
+
+    <View
+        android:id="@+id/discolor"
+        android:layout_width="20dp"
+        android:layout_height="209dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="26dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
